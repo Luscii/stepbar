@@ -3,7 +3,7 @@
 # Step Bar Module
 A material design step bar module with multiple indicator styles.
 
-[ ![Screenshot](screenshot.png) ]
+<img src="screenshot.png" width="300">
 
 ## View Properties
 | Attribute | Type | Code | Description |
