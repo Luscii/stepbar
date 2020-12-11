@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,100 +7,138 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Button Styles" />
+        android:orientation="vertical">
 
-    <com.luscii.stepbar.StepBar
-        android:id="@+id/stepBar1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="4dp"
-        app:autoHideButtons="false"
-        app:indicatorType="dot"
-        app:leftButtonText="Back"
-        app:leftButtonType="primary"
-        app:rightButtonText="Next"
-        app:rightButtonType="primary"
-        app:stepCount="5" />
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Button Styles"
+            android:textAlignment="viewStart" />
 
-    <com.luscii.stepbar.StepBar
-        android:id="@+id/stepBar2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="4dp"
-        app:autoHideButtons="false"
-        app:indicatorType="dot"
-        app:leftButtonText="Back"
-        app:leftButtonType="outlined"
-        app:rightButtonText="Next"
-        app:rightButtonType="outlined"
-        app:stepCount="5" />
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Primary"
+            android:textAlignment="viewStart" />
 
-    <com.luscii.stepbar.StepBar
-        android:id="@+id/stepBar3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="4dp"
-        app:autoHideButtons="false"
-        app:indicatorType="dot"
-        app:leftButtonText="Back"
-        app:leftButtonType="text"
-        app:rightButtonText="Next"
-        app:rightButtonType="text"
-        app:stepCount="3" />
+        <com.luscii.stepbar.StepBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFF"
+            android:elevation="4dp"
+            app:autoHideButtons="false"
+            app:indicatorType="none"
+            app:leftButtonText="Back"
+            app:leftButtonType="primary"
+            app:rightButtonText="Next"
+            app:rightButtonType="primary"
+            app:stepCount="5" />
 
-    <com.luscii.stepbar.StepBar
-        android:id="@+id/stepBar4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="4dp"
-        app:autoHideButtons="false"
-        app:indicatorType="dot"
-        app:leftButtonText="Back"
-        app:leftButtonType="text"
-        app:rightButtonText="Next"
-        app:rightButtonType="primary"
-        app:stepCount="3" />
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Outlined"
+            android:textAlignment="viewStart" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Indicators" />
+        <com.luscii.stepbar.StepBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFF"
+            android:elevation="4dp"
+            app:autoHideButtons="false"
+            app:indicatorType="none"
+            app:leftButtonText="Back"
+            app:leftButtonType="outlined"
+            app:rightButtonText="Next"
+            app:rightButtonType="outlined"
+            app:stepCount="5" />
 
-    <com.luscii.stepbar.StepBar
-        android:id="@+id/stepBar5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="4dp"
-        app:autoHideButtons="false"
-        app:indicatorType="text"
-        app:leftButtonText="Back"
-        app:leftButtonType="primary"
-        app:rightButtonText="Next"
-        app:rightButtonType="primary"
-        app:stepCount="5" />
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Text"
+            android:textAlignment="viewStart" />
 
-    <com.luscii.stepbar.StepBar
-        android:id="@+id/stepBar6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="4dp"
-        app:autoHideButtons="false"
-        app:indicatorType="dot"
-        app:leftButtonText="Back"
-        app:leftButtonType="primary"
-        app:rightButtonText="Next"
-        app:rightButtonType="primary"
-        app:stepCount="5" />
+        <com.luscii.stepbar.StepBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFF"
+            android:elevation="4dp"
+            app:autoHideButtons="false"
+            app:indicatorType="none"
+            app:leftButtonText="Back"
+            app:leftButtonType="text"
+            app:rightButtonText="Next"
+            app:rightButtonType="text"
+            app:stepCount="5" />
 
-</LinearLayout>
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Indicators"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Dot"
+            android:textAlignment="viewStart" />
+
+        <com.luscii.stepbar.StepBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFF"
+            android:elevation="4dp"
+            app:autoHideButtons="false"
+            app:indicatorType="dot"
+            app:leftButtonText="Back"
+            app:leftButtonType="primary"
+            app:rightButtonText="Next"
+            app:rightButtonType="primary"
+            app:stepCount="5" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Text"
+            android:textAlignment="viewStart" />
+
+        <com.luscii.stepbar.StepBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFF"
+            android:elevation="4dp"
+            app:autoHideButtons="false"
+            app:indicatorType="text"
+            app:leftButtonText="Back"
+            app:leftButtonType="primary"
+            app:rightButtonText="Next"
+            app:rightButtonType="primary"
+            app:stepCount="5" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
