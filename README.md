@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/luscii/maven/stepbar/images/download.svg) ](https://bintray.com/luscii/maven/stepbar/_latestVersion)
+
 # Step Bar Module
 You can use this module to have a step bar.
 
