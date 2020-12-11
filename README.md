@@ -5,6 +5,24 @@ A material design step bar module with multiple indicator styles.
 
 <img src="screenshot.png" width="300">
 
+## Usage
+- Add following repository to your project `build.gradle`:
+```
+buildscript {
+    repositories {
+        maven {
+            url 'https://dl.bintray.com/luscii/maven'
+        }
+    }
+}
+```
+- Add following artifact to your module `build.gradle`:
+```
+dependencies {
+    implementation 'com.luscii.stepbar:stepbar:1.2'
+}
+```
+
 ## View Properties
 | Attribute | Type | Code | Description |
 |---|---|---|---|
