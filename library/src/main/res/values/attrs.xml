@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="count" format="integer" />
+    <declare-styleable name="StepBar">
+        <attr name="leftButtonText" format="string" />
+        <attr name="rightButtonText" format="string" />
+        <attr name="leftButtonIcon" format="reference" />
+        <attr name="rightButtonIcon" format="reference" />
+        <attr name="leftButtonEnabled" format="boolean" />
+        <attr name="rightButtonEnabled" format="boolean" />
+        <attr name="autoHideButtons" format="boolean" />
+        <attr name="stepCount" format="integer" />
+        <attr name="leftButtonType" format="enum">
+            <enum name="primary" value="0" />
+            <enum name="outlined" value="1" />
+            <enum name="text" value="2" />
+        </attr>
+        <attr name="rightButtonType" format="enum">
+            <enum name="primary" value="0" />
+            <enum name="outlined" value="1" />
+            <enum name="text" value="2" />
+        </attr>
+        <attr name="indicatorType" format="enum">
+            <enum name="dot" value="0" />
+            <enum name="text" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DotIndicator">
+        <attr name="count" />
+        <attr name="selectedColor" format="color" />
+        <attr name="deselectedColor" format="color" />
+        <attr name="dotRadius" format="dimension" />
+        <attr name="dotDistance" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextIndicator">
+        <attr name="count" />
+        <attr name="color" format="color" />
+        <attr name="formatText" format="string" />
+    </declare-styleable>
+</resources>

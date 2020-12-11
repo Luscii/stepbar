@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StepBarTheme" parent="Theme.MaterialComponents.Light" />
+
+    <style name="ButtonStyleTextColor">
+        <item name="colorOnPrimary">#FFF</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="materialThemeOverlay">@style/ButtonStyleTextColor</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ButtonStyleTextColor</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ButtonStyleTextColor</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="StepBar.PrimaryButton" parent="StepBarTheme">
+        <item name="materialButtonStyle">@style/PrimaryButton</item>
+    </style>
+
+    <style name="StepBar.TextButton" parent="StepBarTheme">
+        <item name="materialButtonStyle">@style/TextButton</item>
+    </style>
+
+    <style name="StepBar.OutlinedButton" parent="StepBarTheme">
+        <item name="materialButtonStyle">@style/OutlinedButton</item>
+    </style>
+
+    <style name="StepBar.DotIndicator" parent="StepBarTheme">
+        <item name="count">5</item>
+        <!--        <item name="selectedColor">@color/</item>-->
+        <!--        <item name="deselectedColor">@color/</item>-->
+        <item name="dotDistance">8dp</item>
+        <item name="dotRadius">4dp</item>
+    </style>
+
+    <style name="StepBar.TextIndicator" parent="StepBarTheme">
+        <item name="count">5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="color">#000</item>
+        <item name="formatText">"Step %1$d of %2$d"</item>
+    </style>
+
+</resources>
