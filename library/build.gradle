@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'com.github.panpf.bintray-publish'
 }
 
 android {
@@ -11,7 +12,7 @@ android {
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName "0.9"
     }
 
     buildTypes {
@@ -35,4 +36,13 @@ dependencies {
     implementation "androidx.core:core-ktx:$core_ktx_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "com.google.android.material:material:$material_version"
+}
+
+publish {
+    userOrg = 'luscii'
+    groupId = 'com.luscii.stepbar'
+    artifactId = 'stepbar'
+    publishVersion = '0.9'
+    desc = 'Android step bar library'
+    website = 'https://github.com/luscii/step-bar'
 }
