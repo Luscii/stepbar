@@ -5,44 +5,45 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion versions.compile_sdk_version
+    buildToolsVersion versions.build_tool_version
 
     defaultConfig {
-        minSdkVersion 24
-        targetSdkVersion 30
+        minSdkVersion versions.min_sdk_version
+        targetSdkVersion versions.target_sdk_version
         versionCode 1
-        versionName "1.0"
+        versionName versions.version_name
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
 }
 
 dependencies {
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "androidx.core:core-ktx:$core_ktx_version"
-    implementation "androidx.appcompat:appcompat:$appcompat_version"
-    implementation "com.google.android.material:material:$material_version"
+    implementation deps.kotlin_stdlib
+    implementation deps.androidx_core_ktx
+    implementation deps.appcompat
+    implementation deps.material
 }
 
 publish {
     userOrg = 'luscii'
     groupId = 'com.luscii.stepbar'
     artifactId = 'stepbar'
-    publishVersion = '1.0'
+    publishVersion = versions.version_name
     desc = 'Android step bar library'
     website = 'https://github.com/luscii/stepbar'
 }
