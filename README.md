@@ -1,7 +1,9 @@
 [ ![Download](https://api.bintray.com/packages/luscii/maven/stepbar/images/download.svg) ](https://bintray.com/luscii/maven/stepbar/_latestVersion)
 
 # Step Bar Module
-You can use this module to have a step bar.
+A material design step bar module with multiple indicator styles.
+
+[ ![Screenshot](screenshot.png) ]
 
 ## View Properties
 | Attribute | Type | Code | Description |
